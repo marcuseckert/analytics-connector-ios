@@ -30,9 +30,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set Xcode 14.3.1
+      - name: Set Xcode 15.4
         run: |
-          sudo xcode-select -switch /Applications/Xcode_14.3.1.app
+          sudo xcode-select -switch /Applications/Xcode_15.4.app
 
       - name: iOS Build 
         run: |
@@ -57,6 +57,14 @@ jobs:
             -scheme AnalyticsConnector \
             -sdk appletvsimulator \
             -destination 'platform=tvOS Simulator,name=Apple TV' \
+
+      - name: visionOS Build
+        run: |
+          xcodebuild \
+            -project AnalyticsConnector.xcodeproj \
+            -scheme AnalyticsConnector \
+            -sdk xrsimulator \
+            -destination 'platform=visionOS Simulator,name=Apple Vision Pro' \
 
       - name: iOS Tests
         run: |
@@ -84,6 +92,20 @@ jobs:
             -destination 'platform=tvOS Simulator,name=Apple TV' \
             test
 
+      - name: visionOS Tests
+        run: |
+          xcodebuild \
+            -project AnalyticsConnector.xcodeproj \
+            -scheme AnalyticsConnector \
+            -sdk xrsimulator \
+            -destination 'platform=visionOS Simulator,name=Apple Vision Pro' \
+            test
+
+      # Install missing sdk for pod lint
+      # Remove this step after the runner upgraded to macos-15
+      - name: Install visionOS simulator
+        run: xcodebuild -downloadPlatform visionOS -quiet
+
       - name: Validate Podfile
         run: pod lib lint --allow-warnings
 
@@ -97,7 +119,9 @@ jobs:
       - name: Update Checksum
         run: |
           CHECKSUM=$(xcrun swift package compute-checksum .build/artifacts/AnalyticsConnector.xcframework.zip) && \
-          sed -i '' -E "s/(checksum: \")[^\"]*(\")/\1$CHECKSUM\2/" Package.swift
+          sed -i '' -E "s/(checksum: \")[^\"]*(\")/\1$CHECKSUM\2/" Package.swift && \
+          sed -i '' -E "s/(checksum: \")[^\"]*(\")/\1$CHECKSUM\2/" Package@swift-5.9.swift
+
 
       - name: Semantic Release --dry-run
         if: ${{ github.event.inputs.dryRun == 'true'}}
