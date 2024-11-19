@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.4...v1.3.0) (2024-11-19)
+
+
+### Features
+
+* add visionOS Support ([#9](https://github.com/amplitude/analytics-connector-ios/issues/9)) ([5f94bc8](https://github.com/amplitude/analytics-connector-ios/commit/5f94bc805319a828e3499487cd2b39626179f237))
+
 ## [1.2.4](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.3...v1.2.4) (2024-11-01)
 
 
