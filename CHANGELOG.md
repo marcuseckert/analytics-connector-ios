@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/amplitude/analytics-connector-ios/compare/v1.3.0...v1.3.1) (2024-11-27)
+
+
+### Bug Fixes
+
+* support target deprecated warning on spm ([#12](https://github.com/amplitude/analytics-connector-ios/issues/12)) ([dab9c38](https://github.com/amplitude/analytics-connector-ios/commit/dab9c38fc29766e44bc7534082c8c7ff263e482c))
+
 # [1.3.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.4...v1.3.0) (2024-11-19)
 
 
