@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2001748C2771569E001C341D"
-               BuildableName = "AnalyticsConnector.framework"
-               BlueprintName = "AnalyticsConnector"
+               BuildableName = "AnalyticsConnectorPack.framework"
+               BlueprintName = "AnalyticsConnectorPack"
                ReferencedContainer = "container:AnalyticsConnector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2001748C2771569E001C341D"
-            BuildableName = "AnalyticsConnector.framework"
-            BlueprintName = "AnalyticsConnector"
+            BuildableName = "AnalyticsConnectorPack.framework"
+            BlueprintName = "AnalyticsConnectorPack"
             ReferencedContainer = "container:AnalyticsConnector.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

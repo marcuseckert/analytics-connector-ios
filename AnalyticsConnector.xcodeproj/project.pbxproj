@@ -6,6 +6,22 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2CCC51DF2D49637C008783E8 /* build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2CCC51E02D49637C008783E8 /* Build configuration list for PBXAggregateTarget "build" */;
+			buildPhases = (
+				2CCC51E32D496391008783E8 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = build;
+			packageProductDependencies = (
+			);
+			productName = build;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2001753427728A4D001C341D /* AnalyticsConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20866C9C2771491B003D1705 /* AnalyticsConnector.swift */; };
 		2001755D27728AD9001C341D /* AnalyticsConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001755C27728AD9001C341D /* AnalyticsConnectorTests.swift */; };
@@ -13,13 +29,13 @@
 		2001756927728E16001C341D /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756827728E16001C341D /* IdentityStore.swift */; };
 		2001756F2773B679001C341D /* EventBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756E2773B679001C341D /* EventBridgeTests.swift */; };
 		200175752773D888001C341D /* IdentityStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200175742773D888001C341D /* IdentityStoreTests.swift */; };
-		20C47A8E297A674F0084AC03 /* AnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200174A52771569E001C341D /* AnalyticsConnector.framework */; platformFilters = (ios, macos, tvos, xros, ); };
+		20C47A8E297A674F0084AC03 /* AnalyticsConnectorPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200174A52771569E001C341D /* AnalyticsConnectorPack.framework */; platformFilters = (ios, macos, tvos, xros, ); };
 		20C9FAB1278CB1C000A4D530 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */; };
 		20C9FAD4278CBFAC00A4D530 /* AnalyticsConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 20866C9B27714900003D1705 /* AnalyticsConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		200174A52771569E001C341D /* AnalyticsConnector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsConnector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		200174A52771569E001C341D /* AnalyticsConnectorPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsConnectorPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		200174BC277156AB001C341D /* AnalyticsConnectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyticsConnectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2001754E27728AB9001C341D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2001755C27728AD9001C341D /* AnalyticsConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsConnectorTests.swift; sourceTree = "<group>"; };
@@ -46,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C47A8E297A674F0084AC03 /* AnalyticsConnector.framework in Frameworks */,
+				20C47A8E297A674F0084AC03 /* AnalyticsConnectorPack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +114,7 @@
 		E914961025796DA800C64B38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				200174A52771569E001C341D /* AnalyticsConnector.framework */,
+				200174A52771569E001C341D /* AnalyticsConnectorPack.framework */,
 				200174BC277156AB001C341D /* AnalyticsConnectorTests.xctest */,
 			);
 			name = Products;
@@ -134,9 +150,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2001748C2771569E001C341D /* AnalyticsConnector */ = {
+		2001748C2771569E001C341D /* AnalyticsConnectorPack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 200174A22771569E001C341D /* Build configuration list for PBXNativeTarget "AnalyticsConnector" */;
+			buildConfigurationList = 200174A22771569E001C341D /* Build configuration list for PBXNativeTarget "AnalyticsConnectorPack" */;
 			buildPhases = (
 				2001748E2771569E001C341D /* Headers */,
 				200174902771569E001C341D /* Sources */,
@@ -147,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = AnalyticsConnector;
+			name = AnalyticsConnectorPack;
 			productName = AnalyticsConnector;
-			productReference = 200174A52771569E001C341D /* AnalyticsConnector.framework */;
+			productReference = 200174A52771569E001C341D /* AnalyticsConnectorPack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		200174AD277156AB001C341D /* AnalyticsConnectorTests */ = {
@@ -184,6 +200,9 @@
 					200174AD277156AB001C341D = {
 						LastSwiftMigration = 1240;
 					};
+					2CCC51DF2D49637C008783E8 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 				};
 			};
 			buildConfigurationList = E914960925796DA800C64B38 /* Build configuration list for PBXProject "AnalyticsConnector" */;
@@ -199,8 +218,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2001748C2771569E001C341D /* AnalyticsConnector */,
+				2001748C2771569E001C341D /* AnalyticsConnectorPack */,
 				200174AD277156AB001C341D /* AnalyticsConnectorTests */,
+				2CCC51DF2D49637C008783E8 /* build */,
 			);
 		};
 /* End PBXProject section */
@@ -221,6 +241,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCC51E32D496391008783E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"AnalyticsConnectorPack\"\nFRAMEWORK_FOLDER_NAME=\"build\"\nSIMULATOR_ARCHIVE_PATH=\"${PROJECT_DIR}/${FRAMEWORK_FOLDER_NAME}/simulator.xcarchive\"\nIOS_DEVICE_ARCHIVE_PATH=\"${PROJECT_DIR}/${FRAMEWORK_FOLDER_NAME}/iOS.xcarchive\"\nCATALYST_ARCHIVE_PATH=\"${PROJECT_DIR}/${FRAMEWORK_FOLDER_NAME}/Catalyst.xcarchive\"\n\nif [ -z \"$BUILDOVERRIDE_PATH\" ]; then\nBUILDOVERRIDE_PATH=\"${PROJECT_DIR}/Products\"\nfi\nFRAMEWORK_PATH=\"${BUILDOVERRIDE_PATH}/${FRAMEWORK_NAME}.xcframework\"\n\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\nif [ -d \"${FRAMEWORK_PATH}\" ]; then\nrm -rf \"${FRAMEWORK_PATH}\"\nfi\n\nmkdir \"${FRAMEWORK_FOLDER_NAME}\"\n\nxcodebuild archive -scheme ${FRAMEWORK_NAME} -destination=\"generic/platform=iOS Simulator\" -archivePath \"${SIMULATOR_ARCHIVE_PATH}\" -sdk iphonesimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\nxcodebuild archive -scheme ${FRAMEWORK_NAME} -destination=\"generic/platform=iOS\" -archivePath \"${IOS_DEVICE_ARCHIVE_PATH}\" -sdk iphoneos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\nxcodebuild archive -scheme ${FRAMEWORK_NAME} -destination 'platform=macOS,variant=Mac Catalyst' -archivePath \"${CATALYST_ARCHIVE_PATH}\" -sdk macosx SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES SUPPORTS_MACCATALYST=YES\n\n\nxcodebuild -create-xcframework -framework ${SIMULATOR_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework -framework ${IOS_DEVICE_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework -framework ${CATALYST_ARCHIVE_PATH}/Products/Library/Frameworks/${FRAMEWORK_NAME}.framework -output \"${FRAMEWORK_PATH}\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		200174902771569E001C341D /* Sources */ = {
@@ -260,7 +300,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/AnalyticsConnector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -270,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amplitude.AnalyticsConnector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -294,7 +334,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/AnalyticsConnector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amplitude.AnalyticsConnector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,6 +404,24 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,6,7";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2CCC51E12D49637C008783E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53Q66SK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CCC51E22D49637C008783E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53Q66SK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -502,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		200174A22771569E001C341D /* Build configuration list for PBXNativeTarget "AnalyticsConnector" */ = {
+		200174A22771569E001C341D /* Build configuration list for PBXNativeTarget "AnalyticsConnectorPack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				200174A32771569E001C341D /* Debug */,
@@ -516,6 +574,15 @@
 			buildConfigurations = (
 				200174BA277156AB001C341D /* Debug */,
 				200174BB277156AB001C341D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CCC51E02D49637C008783E8 /* Build configuration list for PBXAggregateTarget "build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCC51E12D49637C008783E8 /* Debug */,
+				2CCC51E22D49637C008783E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
