@@ -27,13 +27,10 @@ let package = Package(
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        .target(
+        .target( 
             name: "AnalyticsConnectorPack",
             path: "Sources/AnalyticsConnector",
             exclude: ["Info.plist"]),
-        .binaryTarget(name: "AnalyticsConnectorFramework",
-            url: "https://github.com/amplitude/analytics-connector-ios/releases/download/v1.3.1/AnalyticsConnector.xcframework.zip",
-            checksum: "e1817080261a7d156c43c5e79954a00917a2c5682bddf3a2ba9a498aa68f7c9f"),
         .testTarget(
             name: "AnalyticsConnectorTests",
             dependencies: ["AnalyticsConnectorPack"],
