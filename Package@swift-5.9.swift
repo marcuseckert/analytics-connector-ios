@@ -17,10 +17,6 @@ let package = Package(
         .library(
             name: "AnalyticsConnectorPack",
             targets: ["AnalyticsConnectorPack"]
-        ),
-        .library(
-            name: "AnalyticsConnectorFramework",
-            targets: ["AnalyticsConnectorFramework"]
         )
     ],
     dependencies: [

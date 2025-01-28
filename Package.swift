@@ -11,15 +11,11 @@ let package = Package(
         .tvOS(.v9),
         .watchOS(.v3)
     ],
-    products: [
+    products: [ 
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AnalyticsConnectorPack",
             targets: ["AnalyticsConnectorPack"]
-        ),
-        .library(
-            name: "AnalyticsConnectorFramework",
-            targets: ["AnalyticsConnectorFramework"]
         )
     ],
     dependencies: [
@@ -27,7 +23,7 @@ let package = Package(
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        .target( 
+        .target(
             name: "AnalyticsConnectorPack",
             path: "Sources/AnalyticsConnector",
             exclude: ["Info.plist"]),
