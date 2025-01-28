@@ -23,7 +23,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2001753427728A4D001C341D /* AnalyticsConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20866C9C2771491B003D1705 /* AnalyticsConnector.swift */; };
+		2001753427728A4D001C341D /* AnalyticsConnectorPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20866C9C2771491B003D1705 /* AnalyticsConnectorPack.swift */; };
 		2001755D27728AD9001C341D /* AnalyticsConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001755C27728AD9001C341D /* AnalyticsConnectorTests.swift */; };
 		2001756327728E0A001C341D /* EventBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756227728E0A001C341D /* EventBridge.swift */; };
 		2001756927728E16001C341D /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756827728E16001C341D /* IdentityStore.swift */; };
@@ -31,7 +31,7 @@
 		200175752773D888001C341D /* IdentityStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200175742773D888001C341D /* IdentityStoreTests.swift */; };
 		20C47A8E297A674F0084AC03 /* AnalyticsConnectorPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200174A52771569E001C341D /* AnalyticsConnectorPack.framework */; platformFilters = (ios, macos, tvos, xros, ); };
 		20C9FAB1278CB1C000A4D530 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */; };
-		20C9FAD4278CBFAC00A4D530 /* AnalyticsConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 20866C9B27714900003D1705 /* AnalyticsConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C9FAD4278CBFAC00A4D530 /* AnalyticsConnectorPack.h in Headers */ = {isa = PBXBuildFile; fileRef = 20866C9B27714900003D1705 /* AnalyticsConnectorPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		2001756E2773B679001C341D /* EventBridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBridgeTests.swift; sourceTree = "<group>"; };
 		200175742773D888001C341D /* IdentityStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityStoreTests.swift; sourceTree = "<group>"; };
 		20866C9A2771454C003D1705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20866C9B27714900003D1705 /* AnalyticsConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsConnector.h; sourceTree = "<group>"; };
-		20866C9C2771491B003D1705 /* AnalyticsConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsConnector.swift; sourceTree = "<group>"; };
+		20866C9B27714900003D1705 /* AnalyticsConnectorPack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsConnectorPack.h; sourceTree = "<group>"; };
+		20866C9C2771491B003D1705 /* AnalyticsConnectorPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsConnectorPack.swift; sourceTree = "<group>"; };
 		20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
 		E9945CC325797C030066398B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,16 +88,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		20866C99277144F1003D1705 /* AnalyticsConnector */ = {
+		20866C99277144F1003D1705 /* AnalyticsConnectorPack */ = {
 			isa = PBXGroup;
 			children = (
 				20866C9A2771454C003D1705 /* Info.plist */,
-				20866C9B27714900003D1705 /* AnalyticsConnector.h */,
-				20866C9C2771491B003D1705 /* AnalyticsConnector.swift */,
+				20866C9B27714900003D1705 /* AnalyticsConnectorPack.h */,
+				20866C9C2771491B003D1705 /* AnalyticsConnectorPack.swift */,
 				2001756227728E0A001C341D /* EventBridge.swift */,
 				2001756827728E16001C341D /* IdentityStore.swift */,
 			);
-			path = AnalyticsConnector;
+			path = AnalyticsConnectorPack;
 			sourceTree = "<group>";
 		};
 		E914960525796DA800C64B38 = {
@@ -123,7 +123,7 @@
 		E9C5D928257971B900867574 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				20866C99277144F1003D1705 /* AnalyticsConnector */,
+				20866C99277144F1003D1705 /* AnalyticsConnectorPack */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C9FAD4278CBFAC00A4D530 /* AnalyticsConnector.h in Headers */,
+				20C9FAD4278CBFAC00A4D530 /* AnalyticsConnectorPack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2001756327728E0A001C341D /* EventBridge.swift in Sources */,
-				2001753427728A4D001C341D /* AnalyticsConnector.swift in Sources */,
+				2001753427728A4D001C341D /* AnalyticsConnectorPack.swift in Sources */,
 				2001756927728E16001C341D /* IdentityStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
